@@ -55,5 +55,5 @@ this is a code block
 """
         [block] = markdown_to_blocks(input)
         result = block_to_blocktype(block)
-        print(f"\n*****{block}*****\n")
         self.assertEqual(result, BlockType.ORDERED_LIST)
+

@@ -16,6 +16,7 @@ def block_to_blocktype(block: str) -> BlockType:
 
     if block[0] == "#":
         return BlockType.HEADING
+
     if block.startswith("```\n") and block.endswith("```"):
         return BlockType.CODE
 
